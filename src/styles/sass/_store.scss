@@ -1,0 +1,53 @@
+@mixin box($flex, $dir, $jus, $align){
+    display: $flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $align;
+}
+
+@mixin hw($h, $w){
+    height: $h;
+    width: $w;
+}
+
+@mixin font($font, $size, $weight, $height, $spacing){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+//colors
+$blackish: hsla(0,0,10,1);
+$greyish: hsla(0,0,70,1);
+
+//page widths
+$width-mobile: 93%;
+$width-iPad: 90.2%;
+$width-13: 85.3%;
+
+//random
+$header-height: 58.67px;
+
+
+
+
+
+
+
+
+
+// .tester{
+//     color: red;
+// }
+
+
+
+// $para-text: font-family: 'nunito-sans';
+
+// %para-text{
+//     font-family:nunito sans;
+//     font-size: 50px;
+// }
+

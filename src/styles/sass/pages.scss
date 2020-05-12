@@ -1,0 +1,68 @@
+@import 'store';
+
+@media screen and (min-width: 0px){
+  .page{
+    width: $width-mobile;
+    margin: 0 auto;
+  }
+  
+  #home{
+      margin: 0% auto;
+      max-width:1280px;
+      
+    }
+  
+    #page_about{
+      margin: 0 auto;
+      max-width:1280px;
+    }
+    #page_value{
+      margin: 0 auto;
+      width:100%;
+      background-color:$blackish;
+      height:100vh;
+      overflow:hidden;
+      position:fixed;
+      // overscroll-behavior: none;
+      // overflow-y:hidden;
+    }
+  
+    #page_lyn{
+      margin: 0 auto;
+    }
+  
+    #page_bill{
+      font-family: roboto;
+      height:100vh;
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    #home{
+      width: $width-iPad;
+    }
+  
+    #page_about{
+      margin: 139px auto auto auto;
+      width: $width-iPad;
+    }
+  
+    #page_lyn{
+      width: $width-iPad;
+      max-width:1280px;
+      margin: 0 auto;
+      @include box(flex, row, flex-start, flex-start);
+    }
+  }
+
+  @media screen and (min-width: 1280px){
+    
+    #page_about{
+      width: $width-13;
+    }
+
+    #page_lyn{
+      width:$width-13;
+    }
+  }
+  

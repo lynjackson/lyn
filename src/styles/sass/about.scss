@@ -1,0 +1,209 @@
+@import 'store';
+
+@media screen and (min-width: 0px){
+    #page-title{
+        margin:122px 0px 28px 0px;
+        @include box(flex, row, flex-start, center);
+        @include font(poppins, 18px, 600, auto, auto);
+        
+        #little-arrow{
+            @include hw(19px, 14px);
+            transform: rotate(90deg);
+            margin-right: 31.5px;
+        }
+    
+    }
+    
+    .sec{
+        @include box(flex, column, flex-start, center);   
+        margin-bottom: 58px;
+
+        #titleAndText{
+            @include box(flex, column, auto, center);
+            width:100%;
+        }
+        
+        .sec-title{
+            margin-bottom:27px;
+            letter-spacing:-1.5px;
+            text-align:center;
+        }
+        .sec-text{
+            margin-bottom: 33.4px;
+        }
+        
+        .sec-image{
+            width:100vw;
+            position:relative;
+            left:0px;
+        }
+    }
+    
+    #sec1{
+        @keyframes fadeIn {
+            0%{opacity:0};
+            100%{opacity:1};
+        }
+        animation: fadeIn 2s;
+
+        #sec1-image-div{
+            @include hw(187px, 100vw);
+            background-image: url('../../assets/images/fisherman.png');
+            background-position-x: center;
+            background-size:cover;
+        }
+    }
+    
+    
+    #sec2{
+        opacity: 0;
+        transition: opacity .5s;
+        
+        #sec2-titleimage{
+            @extend .sec-image;
+            background: linear-gradient(360deg, hsl(0,0,40), hsl(0,0,10));
+            width:100vw;
+            padding: 6%;
+            left:0px;
+            position:relative;
+            @include box(flex, column, center, flex-start);
+            margin-bottom: 31.3px;
+            
+        }
+        #sec2-title{
+            color:white;
+            width:90.1%;
+            margin:auto auto auto 20px;
+        }
+        #sec2-quote-div{
+            text-align:center;
+        }
+    }
+    
+    #sec3{
+        margin-bottom: 50px;
+        #sec3-image{
+            margin-bottom: 31px;
+            background-image: url('../../assets/images/sec3.jpeg');
+            background-size:cover;
+            height: 276px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    #page-title{
+        margin:122px 0px 42px 0px;
+        @include box(flex, row, flex-start, center);
+        @include font(poppins, 18px, 600, auto, auto);
+        
+        #little-arrow{
+            @include hw(19px, 14px);
+            transform: rotate(90deg);
+            margin-right: 31.5px;
+        }
+    
+    }
+    
+    .sec{
+        margin-bottom:141.7px;
+
+        #titleAndText{
+            @include box(flex, column, auto, center);
+            width:62.9%;
+            margin-right:7.8%;
+        }
+        .sec-title{
+            line-height:52px;
+            text-align:left;
+            margin-bottom:43.4px;
+        }
+    }
+    
+    #sec1{
+        @include box(flex, row, auto, flex-start);
+
+        #sec1-titleAndText{
+            width: 62.9%;
+            margin-right: 7.84%;
+        }
+
+        #sec1-image-div{
+            @include hw(344px, 28.8%);
+            overflow:hidden;
+            background-image: url('../../assets/images/fisherman.png');
+            background-position-x: center;
+            background-size:cover;
+        }
+        
+    }
+
+    #sec2{
+        #sec2-titleimage{
+            padding: 5%;
+            background-position-y: center;
+            margin-bottom: 39.3px;
+        }
+        #sec2-title{
+            margin: 0 auto;
+            width: $width-iPad;
+            text-align:center;
+        }
+        #quoteAndText{
+            @include box(flex, row, space-between, flex-start);
+        }
+        #sec2-text{
+            width:59.84%;
+        }
+        #sec2-quote-div{
+            width: 36.4%;
+            text-align:left;
+        }
+
+        #sec2-quote-text{
+            font-weight: 400;
+            line-height:33px;
+        }
+        #sec2-quote-avon{
+            text-align:right;
+        }
+
+    }
+    
+    #sec3{
+        @include box(flex, row, space-between, flex-start);
+        #sec3-image{
+            @include hw(316px, 299px);
+            background-position-x: -117px;
+        }
+        #sec3-titleAndText{
+            @include box(flex, column, auto, auto);
+            width:63.6%;
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width: 1280px){
+    #page-title{
+        margin:122px 0px 20px 0px;
+    }
+    
+    .sec{
+        margin-bottom:109px;
+    }
+    
+    #sec1{
+        @include box(flex, row, auto, center);
+    }
+    #sec2{
+        #sec2-titleImage{
+            padding:4%;
+        }
+        #sec2-title{
+            width: $width-13;
+        }
+    }
+}

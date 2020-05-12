@@ -1,0 +1,148 @@
+@media screen and (min-width: 0px) {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #above-fold {
+    animation: fadeIn 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-top: 58.67px;
+  }
+  #above-fold #above-title {
+    position: relative;
+    text-align: left;
+    transition: opacity 0.5s;
+    margin-top: 49.5px;
+  }
+  #above-fold #arrow-div {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 74.75vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), white);
+  }
+  #above-fold #above-background {
+    background-size: cover;
+    position: absolute;
+    height: 86vh;
+    width: 100vw;
+    z-index: -1;
+    border: 0px solid white;
+  }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 0.5s;
+    margin-top: 78.9px;
+  }
+  #services .service {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 39px;
+  }
+  #services .service img {
+    height: 46px;
+    width: 46px;
+    margin-right: 40px;
+  }
+  #services .service h3 {
+    margin-bottom: 8px;
+  }
+  #services .service p {
+    margin: 0;
+  }
+
+  #projects {
+    width: 100%;
+    margin-bottom: 88px;
+    transition: opacity 0.5s;
+  }
+  #projects #projects-title {
+    color: #b3b3b3;
+    margin-bottom: 18.2px;
+  }
+  #projects #project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #projects .project {
+    height: 158px;
+    width: 100%;
+    max-width: 452px;
+    background-size: cover;
+    border-radius: 3px;
+    margin-bottom: 28px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  }
+  #projects .project .overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+  }
+  #projects .project .logo {
+    width: 87px;
+    margin-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #above-fold {
+    z-index: 0;
+    margin-bottom: 128px;
+  }
+  #above-fold #above-title {
+    margin-top: 94px;
+  }
+  #above-fold #above-title-bottom {
+    align-self: flex-end;
+  }
+
+  #projects {
+    margin: 0px 0 54px 0;
+  }
+  #projects #project-container {
+    width: 100%;
+    max-width: 924px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #projects .project .logo {
+    margin-right: 71px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #projects .project .logo {
+    margin-right: 96px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

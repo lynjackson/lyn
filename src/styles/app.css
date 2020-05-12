@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../assets/fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../assets/fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../assets/fonts/open-sans/OpenSans-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../assets/fonts/poppins/Poppins-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  src: url("../assets/fonts/poppins/Poppins-ExtraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url("../assets/fonts/poppins/Poppins-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../assets/fonts/poppins/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Semibold';
+  src: url("../assets/fonts/poppins/Poppins-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../assets/fonts/poppins/Poppins-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../assets/fonts/poppins/Poppins-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url("../assets/fonts/raleway/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("../assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url("../assets/fonts/raleway/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url("../assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+
+
+
+
+@media screen and (min-width:0px){
+
+  html{
+    overscroll-behavior: none;
+
+  }
+
+  body{
+    margin: 0;
+    overscroll-behavior: none;
+    background-color: rgb(26,26,26);
+  }
+
+  #routes{
+  width:100%;
+  margin: 0 auto;
+  background-color: white;
+  }
+
+  #app{
+
+  }
+
+
+
+  img{
+
+  }
+
+
+
+  #routes{
+    overflow-x:hidden;
+  }
+
+}
+
+@media screen and (min-width:375px){
+
+}
+
+@media screen and (min-width:411px){
+  #main {
+      width: 88%;
+  }
+}
+
+@media screen and (min-width:750px){
+  #contact-breaker{
+    margin-top:63vh;
+  }
+}
+
+@media screen and (min-width:768px){
+  #main{
+    width:97%;
+  }
+  .view{
+    width:97%;
+  }
+  #routes{
+  }
+  #contact-breaker{
+    margin-top:17.5vh;
+  }
+}
+
+@media screen and (min-width:1024px){
+  #main{
+    width: 89.2%;
+
+  }
+  .view{
+    margin: 0 auto;
+    width:100%;
+  }
+}
+
+
+@media screen and (min-width:1366px){
+  #main{
+    width: 80%;
+    margin: 50px auto;
+
+  }
+}
+
+@media screen and (min-width:1920px){
+  #main{
+    width: 91%;
+    margin: 65px auto;
+  }
+}
+
+
+@media screen and (min-width:2560px){
+  #main{
+    width: 76%;
+    margin: 88px auto;
+  }
+}

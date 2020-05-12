@@ -1,0 +1,64 @@
+
+@media screen and (min-width: 0px){
+  #contact-view{
+      background-color: rgb(51, 51, 51);
+      height:147px;
+      position: absolute;
+      width: 100vw;
+      left: 0;
+      overflow:hidden;
+  }
+  #inner-div_contact{
+    height:1000px;
+  }
+
+  .contact-text{
+    font-family:'Poppins-ExtraLight';
+    font-size: 2.27em;
+    color: white;
+    font-weight: 400;
+    margin: 18.6px 0px 64px 0%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 17.6px 5%;
+  }
+  #contact-link{
+    font-family:Raleway;
+    font-weight:500;
+    font-size: 18px;
+    color:white;
+    margin: 17px 5%;
+  }
+
+  #contact-options{
+    display:flex;
+    flex-direction: column;
+    margin: 98px 0 0 5%;
+  }
+
+  .contact-option{
+    font-family:Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(127, 127, 127);
+    margin:8px 0;
+  }
+  #contact-breaker{
+    margin-top:107vh;
+    position:relative;
+    width:100%;
+    opacity:0;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .contact-text{
+    font-size: 65px;
+    font-weight: 100;
+    margin-top: 0;
+  }
+  #contact-breaker{
+    margin-top:0vh;
+  }
+}

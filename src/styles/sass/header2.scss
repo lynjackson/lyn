@@ -1,0 +1,109 @@
+@import 'store';
+
+@media screen and (min-width:0px){
+    
+  #header2{
+      display:flex;
+      flex-direction: column;
+      width:100vw;
+      position:fixed;
+      transition: background-color .5s, height .5s;
+      z-index:20;
+      overflow:hidden;
+      
+      #header-items2{
+        @include box(flex, row, space-between, center);
+        width:$width-mobile;
+        margin: 11px  auto 0 auto; 
+
+        #logo2{
+          width:37.49px;
+        }
+        #menu2{
+          width:26.63px;
+          height:17.08px;
+          z-index:100;
+        }
+      }
+
+      #nav-options{
+      //   @include box(flex, column, space-between, auto);
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position:relative;
+        top:200px;
+        height: 36vh;
+        text-align:center;
+        
+      }
+      .nav-option{
+          text-decoration: none;
+          color:white;
+      }
+      
+  }
+  
+  #footer{
+    background-color: $blackish;
+
+    #next-link{
+      @include box(flex, row, flex-end, center);
+      // margin-right:14px;
+      padding-right:7%;
+      padding-left:7%;
+      text-decoration: none;
+      
+      #next-text{
+        color:white;
+      }
+      
+      #little-arrow{
+        margin-left:18.3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  
+  #header2{
+    #header-items2{
+      width: $width-iPad;
+
+      #nav-links{
+        @include box(flex, row, space-between, center);
+        width:348px;
+      }
+      .nav-link{
+        text-decoration:none;
+      }
+    }
+  }
+  
+  #footer{
+    // padding-left: calc((100% - #{$width-iPad})/2);
+    
+    #next-link{
+      padding-left: 4.9%;
+        padding-right:4.9%;
+      
+    }
+    
+  }
+}
+
+@media screen and (min-width: 1280px){
+  #header2{
+    #header-items2{
+      width: $width-13;
+    }
+  }
+  #footer{
+    padding-left: calc((100% - #{$width-13})/2);
+    padding-right:calc((100% - #{$width-13})/2);
+  }
+  
+  
+}
+

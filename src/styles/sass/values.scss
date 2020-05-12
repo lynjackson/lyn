@@ -1,0 +1,66 @@
+@import 'store';
+
+@media screen and (min-width: 0px){
+    @keyframes fade{
+        0% {opacity:0};
+        100% {opacity:1};
+    }
+    
+    #value-con{
+        @include box(flex, column, space-between, center);
+        @include hw(100%, 89.8%);  
+        margin: 50% auto;
+        color:white;
+        text-align:center;
+        animation:fade 1s;
+        transition: opacity .2s;
+        height:50%;
+        
+        #value-title{
+            transition:opacity .2s;
+            animation:fade .2s;
+        }
+        #value-text{
+            transition:opacity .2s;
+            border-top: .1px solid rgba(112, 112, 112, 1);
+            border-bottom: .1px solid rgba(112, 112, 112, 1);
+            padding: 23.6px 0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #counterAndArrow{
+            @include box(flex, column, space-between, center);
+            height:200px;
+        }
+        #value-counter{
+            letter-spacing: 9px;
+        }
+
+        img{
+            width:29.25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #value-con{
+        @include hw(54%, 615px);
+        margin: 20% auto;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    #value-con{
+        
+        h3{
+            margin: 27.5px auto;
+            font-size: 44px;
+        }
+        p{
+            padding: 30.5px 0;
+        }
+        h2{
+            margin:37.5px auto 104px auto ;
+        }
+    }
+}

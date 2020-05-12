@@ -1,0 +1,65 @@
+@media screen and (min-width: 0px) {
+  .page {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  #home {
+    margin: 0% auto;
+    max-width: 1280px;
+  }
+
+  #page_about {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  #page_value {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  #page_lyn {
+    margin: 0 auto;
+  }
+
+  #page_bill {
+    font-family: roboto;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home {
+    width: 90.2%;
+  }
+
+  #page_about {
+    margin: 139px auto auto auto;
+    width: 90.2%;
+  }
+
+  #page_lyn {
+    width: 90.2%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #page_about {
+    width: 85.3%;
+  }
+
+  #page_lyn {
+    width: 85.3%;
+  }
+}
+
+/*# sourceMappingURL=pages.css.map */

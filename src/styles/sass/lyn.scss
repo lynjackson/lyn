@@ -1,0 +1,184 @@
+@import 'store';
+$greyy: rgba(0,0,0,.55);
+
+@media screen and (min-width: 0px){
+    .lyn-section{
+    
+        margin-bottom:53px;
+        overflow:hidden;
+        transition: height 1s;
+        
+        .tab{
+            @include box(flex, row, space-between, center);
+            width:100%;
+            margin-bottom: 37.5px;
+            height: 57px;
+            border-bottom: 1px solid hsla(0,0,44,.2);
+            color: hsla(0,0,70);
+            
+            .little-arrow{
+                @include hw(13.5px, 23.62px);
+            }
+        }
+    }
+    
+    #profile{
+        @include box(flex, column, flex-start, flex-start);
+        margin-bottom:49px;
+        margin-top:58.67px;
+        overflow:visible;
+
+        #profile-image{
+            background-image: url('../../assets/images/lyn4.jpeg');
+            background-size: cover;
+            @include hw(449px, 100vw);
+            position:relative;
+            left:calc((100% - #{$width-mobile})/-2);
+            margin-bottom: 35px;
+        }
+        #name{
+            line-height: 32px;
+            margin-bottom:3px;
+        }
+        #title{
+            color: $greyish;
+            line-height: 32px;
+            margin-bottom:3px;
+        }
+        #location{
+            margin-bottom: 22px;
+            font-weight:400;
+        }
+        #contact-div{
+            @include font(nunito sans, 16px, 400, 23.13px, 0px);
+            margin:0;
+            @include box(flex, column, space-between, auto);
+            height:84px;
+            text-decoration:none;
+        }
+        
+
+    }
+
+    .portfolio-project{
+        @include box(flex, row, space-between, flex-start);
+        margin-bottom:60.2px;
+        
+        .portfolio-image-link{
+            width: 44.1%;
+            // box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+
+            .portfolio-image{
+                width: 100%;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+            }
+        }
+        
+        .portfolio-info-div{
+            @include box(flex, column, space-between, flex-start);
+            width: 49.6%;
+            height: 100%;
+        }
+        .info-title{
+            color: $blackish;
+        }
+        .info-tech{
+            margin: 3% 0;
+        }
+        
+        .design-doc-div{
+            @include box(flex, row, flex-start, center);
+        }
+        .xd-icon{
+            width: 21px;
+            margin-right:4.5px;
+        }
+        .design-doc-text{
+            color:$blackish;
+        }
+        
+    }
+    
+    .experience-item{
+        margin-bottom: 37px;
+        
+        .title{
+            // @include font(poppins, 19px, 600, 23px, -1px);
+        }
+        .place{
+            // @include font(poppins, 19px, 600, 23px, -1px);
+            color:$greyish;
+            margin: 1% 0;
+        }
+        .time{
+            margin-bottom:18px;
+        }
+    }
+        
+    .education-item{
+        margin-bottom:27.8px;
+        
+        .degree{
+            color: hsl(0,0,70);
+        }
+    }
+    
+    p{
+        margin-bottom:15px;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    #profile{
+        width:34.1%;
+        
+        #profile-image{
+            // left:calc( (100% - #{$width-iPad}) * -1);
+            width:inherit;
+            position:absolute;
+            left:0px;
+        }
+        #nameTitleLocation{
+            margin-top: 484px;
+        }
+    }
+    
+    #right-side{
+        // width: 55.4vw;
+        width:551px;
+        margin:86px 0 0 61px;
+
+        .portfolio-project{
+            align-items:center;
+            justify-content:flex-start;
+            margin-bottom:40.5px;
+            
+            .portfolio-image{
+                width:203px;
+                height:141px;
+                margin-right: 51px;
+            }
+            .design-doc-div{
+                margin-top:5px;
+                text-decoration: underline;
+            }
+            .xd-icon{
+                margin-right:7px;
+                width: 18px;
+            }
+        
+        }
+        .experience-item{
+            @include box(flex, row, space-between, flex-start);
+            .item-stats{
+                width:119px;
+            }
+            .description{
+                width:386px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,91 @@
+@media screen and (min-width: 0px) {
+  #header2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    transition: background-color 0.5s, height 0.5s;
+    z-index: 20;
+    overflow: hidden;
+  }
+  #header2 #header-items2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin: 11px auto 0 auto;
+  }
+  #header2 #header-items2 #logo2 {
+    width: 37.49px;
+  }
+  #header2 #header-items2 #menu2 {
+    width: 26.63px;
+    height: 17.08px;
+    z-index: 100;
+  }
+  #header2 #nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    height: 36vh;
+    text-align: center;
+  }
+  #header2 .nav-option {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footer {
+    background-color: #1a1a1a;
+  }
+  #footer #next-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 7%;
+    padding-left: 7%;
+    text-decoration: none;
+  }
+  #footer #next-link #next-text {
+    color: white;
+  }
+  #footer #next-link #little-arrow {
+    margin-left: 18.3px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #header2 #header-items2 {
+    width: 90.2%;
+  }
+  #header2 #header-items2 #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 348px;
+  }
+  #header2 #header-items2 .nav-link {
+    text-decoration: none;
+  }
+
+  #footer #next-link {
+    padding-left: 4.9%;
+    padding-right: 4.9%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #header2 #header-items2 {
+    width: 85.3%;
+  }
+
+  #footer {
+    padding-left: calc((100% - 85.3%)/2);
+    padding-right: calc((100% - 85.3%)/2);
+  }
+}
+
+/*# sourceMappingURL=header2.css.map */

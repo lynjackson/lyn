@@ -1,0 +1,143 @@
+
+  
+  @font-face {
+    font-family: 'Poppins-Light';
+    src: url("../../assets/fonts/poppins/Poppins-Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url("../../assets/fonts/poppins/Poppins-ExtraLight.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-Thin';
+    src: url("../../assets/fonts/poppins/Poppins-Thin.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url("../../assets/fonts/poppins/Poppins-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-Semibold';
+    src: url("../../assets/fonts/poppins/Poppins-SemiBold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-Medium';
+    src: url("../../assets/fonts/poppins/Poppins-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'Poppins-Bold';
+    letter-spacing:-14px;
+    src: url('../../assets/fonts/poppins/poppins-bold-webfont.woff') format('woff'),
+    url('../../assets/fonts/poppins/poppins-bold-webfont.woff2') format('woff2'),
+    url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype"),
+  }
+  
+  @import 'store';
+  
+  @media screen and (min-width:0px){
+  
+    html{
+      overscroll-behavior: none;
+  
+    }
+  
+    body{
+      margin: 0;
+      overscroll-behavior: none;
+    }
+  
+    #root{}
+
+    #routes{}
+  
+
+    h1{
+        // @include font(poppins, 27.6px, 400, 32px, auto);
+        @include font('Poppins-Bold', 56px, 800, 61px, -1px);
+        margin:0;
+    }
+    h2{
+      @include font('Poppins-Semibold', 34px, 700, 61px, -1px);  
+      margin:0;
+    }
+    h3{
+      @include font('Poppins-Semibold', 18.4px, 700, 23.48px, 0px);
+      margin: 0;
+    }
+    h4{
+      @include font('Poppins-Bold', 16px, 800, 23.48px, 0px);
+      margin: 0;
+    }
+    h5{
+      @include font(nunito sans, 14px, 400, 14.48px, 0px);
+      margin: 0;
+    }
+    h6{
+      @include font('Poppins-Semibold', 16px, 800, 23.48px, 0px);
+      margin:0;
+    }
+
+    p{
+      @include font(nunito sans, 16px, 400, 23.13px, 0px);
+      margin:0;
+    }
+
+    a{
+      text-decoration:none;
+      color:$blackish;
+    }
+
+    
+  
+  
+  
+    #routes{
+      overflow-x:hidden;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width:1024px){
+    #main{
+      width: 89.2%;
+  
+    }
+    .view{
+      margin: 0 auto;
+      width:100%;
+    }
+    // h1{
+    //     @include font(poppins, 46px, 400, 51px, auto);
+    //     margin:0;
+    // }
+    // h2{
+    //     @include font(poppins, 27.6px, 600, auto, auto);
+    //     margin:0;
+    // }
+  }
+  
+  
+  @media screen and (min-width:1366px){
+    #main{
+      width: 80%;
+      margin: 50px auto;
+  
+    }
+  }
+  
+  @media screen and (min-width:1920px){
+    #main{
+      width: 91%;
+      margin: 65px auto;
+    }
+  }
+  
+  
+  @media screen and (min-width:2560px){
+    #main{
+      width: 76%;
+      margin: 88px auto;
+    }
+  }
+  
