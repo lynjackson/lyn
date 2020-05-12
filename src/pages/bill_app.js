@@ -13,7 +13,7 @@ const BilliOS =()=>{
 const BillAndroid_Border =()=>{
   return(
     <div id='phone-div_bill'>
-    <iframe scrolling='no' id='phone-box_bill' style={{}} src="https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=true&amp;debug=true&amp;device=nexus5&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexpo.io%2F%40hop26%2F74c4cf%2BpPiw812Bd&amp;orientation=portrait&amp;screenOnly=false&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2F74c4cf%2BpPiw812Bd%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
+    <iframe scrolling='no' id='phone-box_bill' style={{}} src="https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=true&amp;debug=true&amp;device=nexus5&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1&amp;orientation=portrait&amp;screenOnly=false&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
     </div>
 
 
@@ -22,14 +22,14 @@ const BillAndroid_Border =()=>{
 const BillAndroid_NoBorder =()=>{
   return(
     <div id='phone-div_bill'>
-    <iframe scrolling='no' id='phone-box_bill' style={{}} src="https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=true&amp;debug=true&amp;device=nexus5&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexpo.io%2F%40hop26%2F74c4cf%2BpPiw812Bd&amp;orientation=portrait&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2F74c4cf%2BpPiw812Bd%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
+    <iframe scrolling='no' id='phone-box_bill' style={{}} src="https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=true&amp;debug=true&amp;device=nexus5&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1&amp;orientation=portrait&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
 
     </div>
   )
 }
 
 
-
+{/* <iframe src="https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=false&amp;debug=true&amp;device=nexus5&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1&amp;orientation=portrait&amp;screenOnly=false&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fcranky-celery%2BIoBs2rZy1%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe> */}
 
 
 
