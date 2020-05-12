@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/bill/bill.css'
 // import '../styles/lyn/portfolio.css'
+import billLogo from '../assets/icons/bill_logo.png';
 
 const BilliOS =()=>{
   return(
@@ -53,9 +54,10 @@ class BillApp_Mobile extends React.Component{
     else{
       return(
         <div id='page_bill' style={{}}>
-          <div id='header_bill'><div id='header-items_bill'><div id='bill-logo_bill'></div></div></div>
+          {/* <div id='header_bill'><div id='header-items_bill'><div id='bill-logo_bill'></div></div></div> */}
           <div id='content-div_bill'>
             <div id='question-qr_bill'>
+              <img src={billLogo} width='215' height='100' style={{marginBottom:100}}/>
               <p className='open-option-title_bill' style={{fontSize: 31}}>Open in Expo</p>
               <div className='qr_portfolio_bill' id='bill-qr_portfolio_bill'></div>
               <p className='open-option-desc_bill' style={{fontSize: 16, width:185}}>Android devices with Expo installed.</p>
