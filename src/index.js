@@ -23,7 +23,7 @@ const Vision = lazy(() => import('./pages/vision'));
 const Values = lazy(() => import('./pages/values2'));
 const Lyn2 = lazy(() => import('./pages/lyn'));
 const Bill = lazy(() => import('./pages/bill'));
-const BillApp_Mobile = lazy(() => import('./pages/bill_app'));
+// const BillApp_Mobile = lazy(() => import('./pages/bill_app'));
 // const Home2 = lazy(() => import('./pages/home'));
 const People = lazy(() => import('./pages/people'));
 
@@ -35,7 +35,7 @@ ReactDOM.render(
 			{/* <Route path='/bill_page/' component={Header} /> */}
 			<Route exact='true' path='/ethe_design/' component={Home2}/>
 			<Suspense fallback={<div style={{height:1, borderColor: 'red', borderWidth:2}}><p style={{color:'white', fontSize:200}}>'loading'</p></div>}>
-				<Route exact='true' path='/bill_page' component={BillApp_Mobile}/>
+				{/* <Route exact='true' path='/bill_page' component={BillApp_Mobile}/> */}
 				<Route exact='true' path='/ethe_design/values' component={Values}/>
 				{/* <Route exact='true' path='/vision' component={Vision} /> */}
 				<Route exact='true' path='/bill' component={Bill}/>
