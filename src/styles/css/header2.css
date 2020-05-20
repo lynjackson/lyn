@@ -1,12 +1,63 @@
 @media screen and (min-width: 0px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    transition: background-color 0.3s, height 0.3s;
+    z-index: 20;
+    overflow: hidden;
+    top: 0;
+    box-sizing: border-box;
+    left: 0;
+    padding-top: 12.8px;
+  }
+  #header #header-items2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 93%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #header #header-items2 #logo2 {
+    width: 37.49px;
+  }
+  #header #header-items2 #menu2 {
+    width: 26.63px;
+    height: 17.08px;
+    z-index: 100;
+  }
+  #header #nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: auto;
+    position: relative;
+    top: 35%;
+    text-align: center;
+    transition: opacity 0.2s;
+  }
+  #header .nav-option {
+    text-decoration: none;
+    color: white;
+  }
+
   #header2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     position: fixed;
     transition: background-color 0.5s, height 0.5s;
     z-index: 20;
     overflow: hidden;
+    top: 0;
+    box-sizing: border-box;
   }
   #header2 #header-items2 {
     display: flex;
@@ -14,7 +65,8 @@
     justify-content: space-between;
     align-items: center;
     width: 93%;
-    margin: 11px auto 0 auto;
+    margin: 0 auto;
+    position: relative;
   }
   #header2 #header-items2 #logo2 {
     width: 37.49px;
@@ -28,9 +80,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: auto;
     position: relative;
-    top: 200px;
-    height: 36vh;
+    top: 35%;
     text-align: center;
   }
   #header2 .nav-option {
@@ -40,14 +92,17 @@
 
   #footer {
     background-color: #1a1a1a;
+    justify-content: flex-end;
+    width: 100vw;
+    position: relative;
+    left: -3.5%;
+    box-sizing: border-box;
   }
   #footer #next-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 7%;
-    padding-left: 7%;
     text-decoration: none;
   }
   #footer #next-link #next-text {
@@ -72,9 +127,8 @@
     text-decoration: none;
   }
 
-  #footer #next-link {
-    padding-left: 4.9%;
-    padding-right: 4.9%;
+  #footer {
+    left: -5.5%;
   }
 }
 @media screen and (min-width: 1280px) {

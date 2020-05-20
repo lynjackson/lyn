@@ -1,4 +1,8 @@
 
+  @font-face {
+    font-family: 'Nunito-Sans-Regular';
+    src: url("../../assets/fonts/nunito-sans/NunitoSans-Regular.ttf") format("truetype");
+  }
   
   @font-face {
     font-family: 'Poppins-Light';
@@ -31,6 +35,16 @@
     url('../../assets/fonts/poppins/poppins-bold-webfont.woff2') format('woff2'),
     url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype"),
   }
+
+  @font-face {
+    font-family: 'Poppins-ExtraBold';
+    letter-spacing:-14px;
+    src: url('../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.woff') format('woff'),
+    url('../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.woff2') format('woff2'),
+    // url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.otf") format("opentype"),
+    url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.ttf") format("truetype"),
+    url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.svg") format("svg"),
+  }
   
   @import 'store';
   
@@ -42,18 +56,21 @@
     }
   
     body{
-      margin: 0;
+      // margin: 0;
       overscroll-behavior: none;
     }
   
     #root{}
 
-    #routes{}
+    #routes{
+      background:url('../../assets/images/whiteBack2.jpg') fixed;
+      background-size: 100% 250%
+    }
   
 
     h1{
         // @include font(poppins, 27.6px, 400, 32px, auto);
-        @include font('Poppins-Bold', 56px, 800, 61px, -1px);
+        @include font('Poppins-ExtraBold', 34px, 900, 43px, -1px);
         margin:0;
     }
     h2{
@@ -65,11 +82,11 @@
       margin: 0;
     }
     h4{
-      @include font('Poppins-Bold', 16px, 800, 23.48px, 0px);
+      @include font('Poppins-Medium', 16px, 800, 23.48px, 0px);
       margin: 0;
     }
     h5{
-      @include font(nunito sans, 14px, 400, 14.48px, 0px);
+      @include font('NunitoSans-Regular', 14px, 400, 14.48px, 0px);
       margin: 0;
     }
     h6{
@@ -78,7 +95,7 @@
     }
 
     p{
-      @include font(nunito sans, 16px, 400, 23.13px, 0px);
+      @include font('Nunito-Sans-Regular', 16px, 400, 23.13px, 0px);
       margin:0;
     }
 
@@ -98,7 +115,17 @@
   }
   
   
+  @media screen and (min-width:768px){
+    h1{
+   
+      @include font('Poppins-Bold', 56px, 800, 61px, -1px);
+      margin:0;
+    }
+  }
+
   @media screen and (min-width:1024px){
+    
+    
     #main{
       width: 89.2%;
   

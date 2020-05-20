@@ -17,7 +17,7 @@
   #page_value {
     margin: 0 auto;
     width: 100%;
-    background-color: #1a1a1a;
+    background: transparent linear-gradient(152deg, #212121 0%, #3D3D3D 100%) 0% 0% no-repeat padding-box;
     height: 100vh;
     overflow: hidden;
     position: fixed;
@@ -53,6 +53,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  #home {
+    width: 85.3%;
+  }
+
   #page_about {
     width: 85.3%;
   }

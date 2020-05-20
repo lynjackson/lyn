@@ -7,23 +7,43 @@
       opacity: 1;
     }
   }
+  .home-header {
+    color: #707070;
+    margin-bottom: 10.4px;
+  }
+
   #above-fold {
     animation: fadeIn 2s;
     display: flex;
     flex-direction: column;
     justify-content: auto;
-    align-items: center;
+    align-items: auto;
     height: auto;
     width: 100%;
     position: relative;
     z-index: 0;
-    margin-top: 58.67px;
+    margin-top: 108.17px;
   }
   #above-fold #above-title {
     position: relative;
     text-align: left;
     transition: opacity 0.5s;
-    margin-top: 49.5px;
+    max-width: 892px;
+  }
+  #above-fold #above-title #team-up {
+    background: -webkit-linear-gradient(68deg, #68E58F, #BEE667);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #above-fold #above-title #creatives {
+    background: -webkit-linear-gradient(68deg, #4CB0D5, #4CD5C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #above-fold #above-title #dig-exp {
+    background: -webkit-linear-gradient(68deg, #E629A5, #6B29E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #above-fold #arrow-div {
     height: 100px;
@@ -76,7 +96,7 @@
 
   #projects {
     width: 100%;
-    margin-bottom: 88px;
+    margin: 88px auto;
     transition: opacity 0.5s;
   }
   #projects #projects-title {
@@ -85,10 +105,9 @@
   }
   #projects #project-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
   }
   #projects .project {
     height: 158px;
@@ -112,14 +131,36 @@
     width: 87px;
     margin-bottom: 21px;
   }
+
+  #vision {
+    transition: opacity 0.5s;
+  }
+  #vision #vision-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: auto;
+  }
+  #vision #vision-content #vision-image {
+    height: 178px;
+    width: 100%;
+    margin: 30px auto;
+    background: url("../../assets/images/puddle.jpeg") center;
+    background-size: cover;
+  }
+  #vision #vision-content #vision-text {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  #vision #more-values {
+    text-align: right;
+    margin-top: 19.6px;
+  }
 }
 @media screen and (min-width: 1024px) {
   #above-fold {
     z-index: 0;
-    margin-bottom: 128px;
-  }
-  #above-fold #above-title {
-    margin-top: 94px;
+    margin-bottom: 96px;
   }
   #above-fold #above-title-bottom {
     align-self: flex-end;
@@ -133,15 +174,28 @@
     max-width: 924px;
     justify-content: space-between;
   }
-}
-@media screen and (min-width: 1280px) {
-  #projects .project .logo {
-    margin-right: 71px;
+  #vision {
+    margin-bottom: 100px;
+  }
+  #vision #vision-content {
+    flex-direction: row;
+  }
+  #vision #vision-content #titleAndText {
+    width: 62.6%;
+    margin-right: 13%;
+  }
+  #vision #vision-content #vision-title {
+    margin-bottom: 19px;
+  }
+  #vision #vision-content #vision-image {
+    height: 337px;
+    width: 306px;
+    margin: 0;
   }
 }
-@media screen and (min-width: 1440px) {
-  #projects .project .logo {
-    margin-right: 96px;
+@media screen and (min-width: 1280px) {
+  #projects {
+    margin-bottom: 96px;
   }
 }
 

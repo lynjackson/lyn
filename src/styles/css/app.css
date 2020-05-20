@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Nunito-Sans-Regular";
+  src: url("../../assets/fonts/nunito-sans/NunitoSans-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Poppins-Light";
   src: url("../../assets/fonts/poppins/Poppins-Light.otf") format("opentype");
 }
@@ -27,21 +31,30 @@
   letter-spacing: -14px;
   src: url("../../assets/fonts/poppins/poppins-bold-webfont.woff") format("woff"), url("../../assets/fonts/poppins/poppins-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/poppins/Poppins-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  letter-spacing: -14px;
+  src: url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.woff") format("woff"), url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.woff2") format("woff2"), url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.ttf") format("truetype"), url("../../assets/fonts/poppins/extrabold/poppins-v9-latin-800.svg") format("svg");
+}
 @media screen and (min-width: 0px) {
   html {
     overscroll-behavior: none;
   }
 
   body {
-    margin: 0;
     overscroll-behavior: none;
   }
 
+  #routes {
+    background: url("../../assets/images/whiteBack2.jpg") fixed;
+    background-size: 100% 250%;
+  }
+
   h1 {
-    font-family: "Poppins-Bold";
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 61px;
+    font-family: "Poppins-ExtraBold";
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 43px;
     letter-spacing: -1px;
     margin: 0;
   }
@@ -65,7 +78,7 @@
   }
 
   h4 {
-    font-family: "Poppins-Bold";
+    font-family: "Poppins-Medium";
     font-size: 16px;
     font-weight: 800;
     line-height: 23.48px;
@@ -74,7 +87,7 @@
   }
 
   h5 {
-    font-family: nunito sans;
+    font-family: "NunitoSans-Regular";
     font-size: 14px;
     font-weight: 400;
     line-height: 14.48px;
@@ -92,7 +105,7 @@
   }
 
   p {
-    font-family: nunito sans;
+    font-family: "Nunito-Sans-Regular";
     font-size: 16px;
     font-weight: 400;
     line-height: 23.13px;
@@ -107,6 +120,16 @@
 
   #routes {
     overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-family: "Poppins-Bold";
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: -1px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1024px) {

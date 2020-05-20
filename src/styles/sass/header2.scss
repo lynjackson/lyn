@@ -2,19 +2,25 @@
 
 @media screen and (min-width:0px){
     
-  #header2{
-      display:flex;
-      flex-direction: column;
+  #header{
+    @include box(flex, column, flex-start, center);  
       width:100vw;
       position:fixed;
-      transition: background-color .5s, height .5s;
+      transition: background-color .3s, height .3s;
       z-index:20;
       overflow:hidden;
+      top:0;
+      // padding-top:11px;
+      box-sizing: border-box;
+      left:0;
+      padding-top:12.8px;
       
       #header-items2{
-        @include box(flex, row, space-between, center);
+        @include box(flex, row, flex-end, center);
         width:$width-mobile;
-        margin: 11px  auto 0 auto; 
+        margin: 0 auto; 
+        position:relative;
+        // top:11px;
 
         #logo2{
           width:37.49px;
@@ -27,14 +33,68 @@
       }
 
       #nav-options{
-      //   @include box(flex, column, space-between, auto);
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include box(flex, column, space-between, auto);
         position:relative;
-        top:200px;
-        height: 36vh;
+        top:35%;
+        // height: 36vh;
         text-align:center;
+        transition: opacity .2s;
+
+        #divider{
+        
+        }
+        
+      }
+      .nav-option{
+          text-decoration: none;
+          color:white;
+      }
+  }
+
+
+
+
+
+
+  
+  #header2{
+      @include box(flex, column, center, center);  
+      width:100vw;
+      position:fixed;
+      transition: background-color .5s, height .5s;
+      z-index:20;
+      overflow:hidden;
+      top:0;
+      // padding-top:11px;
+      box-sizing: border-box;
+      
+      #header-items2{
+        @include box(flex, row, space-between, center);
+        width:$width-mobile;
+        margin: 0 auto; 
+        position:relative;
+        // top:11px;
+
+        #logo2{
+          width:37.49px;
+        }
+        #menu2{
+          width:26.63px;
+          height:17.08px;
+          z-index:100;
+        }
+      }
+
+      #nav-options{
+        @include box(flex, column, space-between, auto);
+        position:relative;
+        top:35%;
+        // height: 36vh;
+        text-align:center;
+
+        #divider{
+        
+        }
         
       }
       .nav-option{
@@ -42,16 +102,22 @@
           color:white;
       }
       
+      
   }
   
   #footer{
     background-color: $blackish;
+    justify-content: flex-end;
+    width:100vw;
+    position:relative;
+    left:-3.5%;
+    box-sizing: border-box;
 
     #next-link{
       @include box(flex, row, flex-end, center);
       // margin-right:14px;
-      padding-right:7%;
-      padding-left:7%;
+      // padding-right:7%;
+      // padding-left:7%;
       text-decoration: none;
       
       #next-text{
@@ -83,10 +149,11 @@
   
   #footer{
     // padding-left: calc((100% - #{$width-iPad})/2);
+    left:-5.5%;
     
     #next-link{
-      padding-left: 4.9%;
-        padding-right:4.9%;
+      // padding-left: 4.9%;
+      //   padding-right:4.9%;
       
     }
     

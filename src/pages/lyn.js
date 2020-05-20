@@ -1,8 +1,9 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import {HeaderMobile, HeaderDesktop} from '../components/header';
+// import {HeaderMobile, HeaderDesktop} from '../components/header';
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
+import {HeaderMobile, HeaderDesktop, LynHeader} from '../components/header';
 // import '../styles/lyn/lyn.css'
 // import '../styles/css/pages.css'
 // import {ContactLink} from '../components/lyn/contact-link'
@@ -24,6 +25,7 @@ const Lyn2 = ()=>{
   
   return(
     <div id='page_lyn' className='page'>
+      <LynHeader />
       <Profile />
       <div id='right-side'>
         <Portfolio />

@@ -9,13 +9,19 @@
     100%{opacity:1};
   }
 
+  .home-header{
+    color:$darkGrey;
+    margin-bottom:10.4px;
+  }
+
   #above-fold{
     animation: fadeIn 2s;
-    @include box(flex, column, auto, center);
+    @include box(flex, column, auto, auto);
     @include hw(auto, 100%);
     position: relative;
     z-index:0;
-    margin-top:$header-height;
+    margin-top:108.17px;
+    
 
       #above-title{
         position: relative;
@@ -23,17 +29,37 @@
         text-align:left;
         // @include font('Poppins-Medium', 46.35px, 400, 47.02px, -14);
         transition: opacity .5s;
-        margin-top:49.5px;
+        max-width: 892px;
+        
+
+        #team-up{
+          // color:linear-gradient(152deg, #212121 0%, #3D3D3D 100%)
+          background: -webkit-linear-gradient(68deg, #68E58F, #BEE667);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        #creatives{
+          // color:linear-gradient(152deg, #212121 0%, #3D3D3D 100%)
+          background: -webkit-linear-gradient(68deg, #4CB0D5, #4CD5C0);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        #dig-exp{
+          // color:linear-gradient(152deg, #212121 0%, #3D3D3D 100%)
+          background: -webkit-linear-gradient(68deg, #E629A5, #6B29E6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
 
-        #arrow-div{
-          @include hw(100px, 100vw);
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          top: 74.75vh;
-          background: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, 1));
-        }
+      #arrow-div{
+        @include hw(100px, 100vw);
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 74.75vh;
+        background: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, 1));
+      }
   
         #above-background{
           // background-image: url('../../assets/images/white-back.jpg');
@@ -78,8 +104,9 @@
 
   #projects{
     width: 100%;
-    margin-bottom:88px;
+    margin:88px auto;
     transition: opacity .5s;
+    
     
     #projects-title{
       color:$greyish;
@@ -87,8 +114,7 @@
     }
 
     #project-container{
-      @include box(flex, row, flex-start, flex-start);
-      flex-wrap: wrap;
+      @include box(flex, column, flex-start, flex-start);
     }
     .project{
       height:158px;
@@ -117,6 +143,32 @@
     // }
   
   }
+  
+  #vision{
+    transition: opacity 0.5s;
+    #vision-content{
+      @include box(flex, column, auto, auto);
+      #vision-title{
+        
+      }
+      #vision-image{
+        @include hw(178px, 100%);
+        margin: 30px auto;
+        background: url('../../assets/images/puddle.jpeg') center;
+        background-size: cover;
+      }
+      #vision-text{
+        font-size:19px;
+        line-height:23px;
+      }
+    }
+    #more-values{
+      text-align:right;
+      margin-top:19.6px;
+    }
+  }
+
+  
 
   
 }
@@ -125,12 +177,10 @@
 @media screen and (min-width: 1024px){
   #above-fold{
     z-index: 0;
-    margin-bottom: 128px;
+    margin-bottom: 96px;
 
     #above-title{
-      margin-top:94px;
       
-    
     }
   
     #above-title-bottom{
@@ -160,14 +210,39 @@
     }
   
   }
+  
+  #vision{
+    margin-bottom:100px;
+
+    #vision-content{
+      flex-direction: row;
+
+      #titleAndText{
+        width: 62.6%;
+        margin-right:13%;
+      }
+      #vision-title{
+        margin-bottom: 19px;
+      }
+      #vision-image{
+        @include hw(337px, 306px);
+        margin: 0;
+      }
+    }
+    
+  }
 }
 
 @media screen and (min-width: 1280px){
+  
+  
+  
+  
+  
   #projects{
+    margin-bottom: 96px;
     .project{
-      .logo{
-        margin-right: 71px;
-      }
+      
     }
   }
   
@@ -176,9 +251,7 @@
 @media screen and (min-width: 1440px){
   #projects{
     .project{
-      .logo{
-        margin-right: 96px;
-      }
+      
     }
   }
   
