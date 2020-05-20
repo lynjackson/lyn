@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0bdd9a2a02781154c689d38c91b671c",
+    "revision": "5ed7b80598b636f8f28a580fb475e31f",
     "url": "/bill_page/index.html"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bill_page/static/css/5.53fbac4d.chunk.css"
   },
   {
-    "revision": "1c2df505059d14b85378",
-    "url": "/bill_page/static/css/6.6ccc29bd.chunk.css"
+    "revision": "96206324d2160b7672f1",
+    "url": "/bill_page/static/css/6.1d5e8f67.chunk.css"
   },
   {
-    "revision": "37925d3091b75c4791b7",
-    "url": "/bill_page/static/css/7.6ccc29bd.chunk.css"
+    "revision": "3361025670f385c165a4",
+    "url": "/bill_page/static/css/7.1d5e8f67.chunk.css"
   },
   {
     "revision": "9727816e57ddec4ef0d0",
@@ -52,11 +52,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bill_page/static/js/5.05da309a.chunk.js"
   },
   {
-    "revision": "1c2df505059d14b85378",
+    "revision": "96206324d2160b7672f1",
     "url": "/bill_page/static/js/6.f050a54c.chunk.js"
   },
   {
-    "revision": "37925d3091b75c4791b7",
+    "revision": "3361025670f385c165a4",
     "url": "/bill_page/static/js/7.d4c435eb.chunk.js"
   },
   {
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bill_page/static/js/main.4f18a335.chunk.js"
   },
   {
-    "revision": "76d6c59f7c78d0f69181",
-    "url": "/bill_page/static/js/runtime-main.128402f8.js"
+    "revision": "b69ebb2edf4bc51442c5",
+    "url": "/bill_page/static/js/runtime-main.a7c2fa1d.js"
   },
   {
     "revision": "50145685042b4df07a1fd19957275b81",
@@ -132,16 +132,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bill_page/static/media/bill-background.bd235d72.jpeg"
   },
   {
+    "revision": "3a6393de627ffa4a0c9d93ecdc4612f6",
+    "url": "/bill_page/static/media/bill-qr.3a6393de.png"
+  },
+  {
     "revision": "2d60eb1dadc1a6ededd8fb4914866100",
     "url": "/bill_page/static/media/bill.2d60eb1d.png"
   },
   {
     "revision": "8d1ada57e96ffeb01beb38716716d0c6",
     "url": "/bill_page/static/media/bill_logo.8d1ada57.png"
-  },
-  {
-    "revision": "da478fe4dd293cb0fe92d134d60e59c4",
-    "url": "/bill_page/static/media/bill_qr.da478fe4.jpg"
   },
   {
     "revision": "8dfe236edc98981e91a2c4856d489a78",
