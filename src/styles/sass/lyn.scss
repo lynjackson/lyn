@@ -2,6 +2,10 @@
 $greyy: rgba(0,0,0,.55);
 
 @media screen and (min-width: 0px){
+    .grey-title{
+        @include font('Poppins-Bold', 32px, 800, auto, -.5px);
+    }
+    
     .lyn-section{
     
         margin-bottom:53px;
@@ -28,13 +32,14 @@ $greyy: rgba(0,0,0,.55);
         margin-top:58.67px;
         overflow:visible;
 
-        #profile-image{
-            background-image: url('../../assets/images/lyn4.jpeg');
+        #image{
+            background-image: url('../../assets/images/lyn2.jpg');
             background-size: cover;
-            @include hw(449px, 100vw);
+            @include hw(217px, 100vw);
             position:relative;
             left:calc((100% - #{$width-mobile})/-2);
             margin-bottom: 35px;
+            background-position-y: -50px;
         }
         #name{
             line-height: 32px;
@@ -50,10 +55,10 @@ $greyy: rgba(0,0,0,.55);
             font-weight:400;
         }
         #contact-div{
-            @include font(nunito sans, 16px, 400, 23.13px, 0px);
+            @include font("Nunito-Sans-Regular", 16px, 400, 23.13px, 0px);
             margin:0;
             @include box(flex, column, space-between, auto);
-            height:84px;
+            height:76px;
             text-decoration:none;
         }
         
@@ -64,8 +69,10 @@ $greyy: rgba(0,0,0,.55);
         @include box(flex, row, space-between, flex-start);
         margin-bottom:60.2px;
         
-        .portfolio-image-link{
+        .project-image-link{
             width: 44.1%;
+            overflow:hidden;
+            height:120px;
             // box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
 
             .portfolio-image{
@@ -74,28 +81,30 @@ $greyy: rgba(0,0,0,.55);
             }
         }
         
-        .portfolio-info-div{
+        .project-info-div{
             @include box(flex, column, space-between, flex-start);
             width: 49.6%;
-            height: 100%;
+            height: 120px;
         }
-        .info-title{
+        .title{
             color: $blackish;
         }
-        .info-tech{
+        .tech{
             margin: 3% 0;
         }
         
         .design-doc-div{
             @include box(flex, row, flex-start, center);
+            
+            .xd-icon{
+                width: 21px;
+                margin-right:4.5px;
+            }
+            .design-doc-text{
+                color:$blackish;
+            }
         }
-        .xd-icon{
-            width: 21px;
-            margin-right:4.5px;
-        }
-        .design-doc-text{
-            color:$blackish;
-        }
+        
         
     }
     
@@ -133,14 +142,14 @@ $greyy: rgba(0,0,0,.55);
     #profile{
         width:34.1%;
         
-        #profile-image{
+        #image{
             // left:calc( (100% - #{$width-iPad}) * -1);
             width:inherit;
             position:absolute;
             left:0px;
         }
         #nameTitleLocation{
-            margin-top: 484px;
+            margin-top: 254px;
         }
     }
     
@@ -154,9 +163,16 @@ $greyy: rgba(0,0,0,.55);
             justify-content:flex-start;
             margin-bottom:40.5px;
             
+            .project-image-link{
+                width:34.1%;
+                margin-right:51px;
+            }
+            .project-info-div{
+                height:72px;
+            }
             .portfolio-image{
-                width:203px;
-                height:141px;
+                // width:203px;
+                // height:141px;
                 margin-right: 51px;
             }
             .design-doc-div{

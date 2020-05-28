@@ -1,4 +1,12 @@
 @media screen and (min-width: 0px) {
+  .grey-title {
+    font-family: "Poppins-Bold";
+    font-size: 32px;
+    font-weight: 800;
+    line-height: auto;
+    letter-spacing: -0.5px;
+  }
+
   .lyn-section {
     margin-bottom: 53px;
     overflow: hidden;
@@ -29,14 +37,15 @@
     margin-top: 58.67px;
     overflow: visible;
   }
-  #profile #profile-image {
-    background-image: url("../../assets/images/lyn4.jpeg");
+  #profile #image {
+    background-image: url("../../assets/images/lyn2.jpg");
     background-size: cover;
-    height: 449px;
+    height: 217px;
     width: 100vw;
     position: relative;
     left: calc((100% - 93%)/-2);
     margin-bottom: 35px;
+    background-position-y: -50px;
   }
   #profile #name {
     line-height: 32px;
@@ -52,7 +61,7 @@
     font-weight: 400;
   }
   #profile #contact-div {
-    font-family: nunito sans;
+    font-family: "Nunito-Sans-Regular";
     font-size: 16px;
     font-weight: 400;
     line-height: 23.13px;
@@ -62,7 +71,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: auto;
-    height: 84px;
+    height: 76px;
     text-decoration: none;
   }
 
@@ -73,25 +82,27 @@
     align-items: flex-start;
     margin-bottom: 60.2px;
   }
-  .portfolio-project .portfolio-image-link {
+  .portfolio-project .project-image-link {
     width: 44.1%;
+    overflow: hidden;
+    height: 120px;
   }
-  .portfolio-project .portfolio-image-link .portfolio-image {
+  .portfolio-project .project-image-link .portfolio-image {
     width: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
-  .portfolio-project .portfolio-info-div {
+  .portfolio-project .project-info-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     width: 49.6%;
-    height: 100%;
+    height: 120px;
   }
-  .portfolio-project .info-title {
+  .portfolio-project .title {
     color: #1a1a1a;
   }
-  .portfolio-project .info-tech {
+  .portfolio-project .tech {
     margin: 3% 0;
   }
   .portfolio-project .design-doc-div {
@@ -100,11 +111,11 @@
     justify-content: flex-start;
     align-items: center;
   }
-  .portfolio-project .xd-icon {
+  .portfolio-project .design-doc-div .xd-icon {
     width: 21px;
     margin-right: 4.5px;
   }
-  .portfolio-project .design-doc-text {
+  .portfolio-project .design-doc-div .design-doc-text {
     color: #1a1a1a;
   }
 
@@ -134,13 +145,13 @@
   #profile {
     width: 34.1%;
   }
-  #profile #profile-image {
+  #profile #image {
     width: inherit;
     position: absolute;
     left: 0px;
   }
   #profile #nameTitleLocation {
-    margin-top: 484px;
+    margin-top: 254px;
   }
 
   #right-side {
@@ -152,9 +163,14 @@
     justify-content: flex-start;
     margin-bottom: 40.5px;
   }
+  #right-side .portfolio-project .project-image-link {
+    width: 34.1%;
+    margin-right: 51px;
+  }
+  #right-side .portfolio-project .project-info-div {
+    height: 72px;
+  }
   #right-side .portfolio-project .portfolio-image {
-    width: 203px;
-    height: 141px;
     margin-right: 51px;
   }
   #right-side .portfolio-project .design-doc-div {

@@ -1,19 +1,9 @@
-import React, { Suspense, lazy, useEffect } from 'react';
-// import {HeaderMobile, HeaderDesktop} from '../components/header';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
+import {HeaderMobile, HeaderDesktop, LynHeader} from '../components/header';
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
-import {HeaderMobile, HeaderDesktop, LynHeader} from '../components/header';
-// import '../styles/lyn/lyn.css'
-// import '../styles/css/pages.css'
-// import {ContactLink} from '../components/lyn/contact-link'
 import {Profile_Mobile, Profile, Stack, Portfolio, Experience, Education, More} from '../components/lyn-components'
-// import {Stack_Mobile, Stack_Desktop} from '../components/lyn/stack'
-// import {Portfolio_Mobile, Portfolio_Desktop} from '../components/lyn/portfolio'
-// import {Experience, Experience_Desktop} from '../components/lyn/experience'
-// import {Education} from '../components/lyn/education';
-// import {More} from '../components/lyn/more';
-
 
 const Lyn2 = ()=>{
   
@@ -22,6 +12,18 @@ const Lyn2 = ()=>{
   //     (window.pageYOffset > document.getElementById('projects').offsetTop - 423) ? setOpacity(1) : setOpacity(.18)
   //   })
   // })
+
+  const [loadStatus, setLoadStatus] = useState('no')
+  
+  useEffect(()=>{
+    setLoadStatus('yes')
+  })
+  
+  if(loadStatus === 'no'){
+    return(
+      <div style={{height:'100vh', width:'100vw', backgroundColor:'green'}}><h1>loading</h1></div>
+    )
+  }
   
   return(
     <div id='page_lyn' className='page'>
