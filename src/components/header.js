@@ -36,7 +36,7 @@ export const Header = (props)=>{
   useEffect(()=>{
     document.getElementById('header').addEventListener('wheel', (e)=>{
       if(headerStyle.height === '100vh'){ e.preventDefault() }
-    })
+    }, {passive: true})
   })
   
   //rendered content
@@ -44,7 +44,7 @@ export const Header = (props)=>{
     <div id='header' style={headerStyle}>
       <div id='header-items2' style={{justifyContent: props.headerItemsJustifyContent}}>
         
-      <Link to='/ethe_design'><img src={ethey} id='logo2' style={{visibility:props.logoVis}} /></Link>
+      <a href='https://lynjackson.github.io/ethe_design/'><img src={ethey} id='logo2' style={{visibility:props.logoVis}} /></a>
         
         <img src={menuOption.icon} style={menuOption.style} onClick={()=>{
           if(headerStyle.height === 58.67){
@@ -61,9 +61,9 @@ export const Header = (props)=>{
       </div>
       
       <div id='nav-options' style={navOpStyle}>
-        <Link to='/ethe_design/values' className='nav-option'  ><h2>our values</h2></Link>
+        <Link to='/lyn' className='nav-option'><h2>our designer</h2></Link>
         <hr id='divider' style={{borderWidth:1, borderColor:'#A3A3A3', width:'100%'}}/>
-        <Link to='/ethe_design/lyn' className='nav-option'><h2>our designer</h2></Link>
+        <Link to='/ethe_design/values' className='nav-option'  ><h2>our values</h2></Link>
       </div>
     
     </div>
@@ -139,9 +139,9 @@ export const HomeHeader2 = ()=>{
       setOffset(window.pageYOffset);
       console.log(offset, 'offset')
     })
-    document.getElementById('home-header').addEventListener('wheel', (e)=>{
-      if(headerHeight === '100vh'){ e.preventDefault() }
-    })
+    // document.getElementById('home-header').addEventListener('wheel', (e)=>{
+    //   if(headerHeight === '100vh'){ e.preventDefault() }
+    // })
   })
   
   return (

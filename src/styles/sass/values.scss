@@ -9,34 +9,41 @@
     #value-con{
         @include box(flex, column, space-between, center);
         @include hw(100%, 89.8%);  
-        margin: 50% auto;
+        margin: 57% auto;
         color:white;
         text-align:center;
         animation:fade .75s;
         // transition: opacity .2s;
-        height:50%;
+        height:467px;
         
-        #value-title{
-            transition: opacity .2s;
-            animation:fade 2.75s;
-        }
-        #value-text-div{
-            border-top: .1px solid rgba(112, 112, 112, 1);
-            border-bottom: .1px solid rgba(112, 112, 112, 1);
-            padding: 23.6px 0;
-            box-sizing: border-box;
-            @include box(flex, column, center, center);
-            max-width:500px;
-            transition:width .4s;
+        #title-and-text{
+            @include box(flex, column, auto, center);
+            #value-title{
+                transition: opacity .2s;
+                animation:fade 2.75s;
+                margin-bottom: 35px;
+                font-size:56px;
+            }
+            #value-text-div{
+                border-top: .1px solid rgba(112, 112, 112, 1);
+                border-bottom: .1px solid rgba(112, 112, 112, 1);
+                padding: 18.5px 0;
+                box-sizing: border-box;
+                @include box(flex, column, center, center);
+                max-width:500px;
+                transition:width .4s;   
+            }
+            
             #value-text{
                 transition: opacity .2s, bottom .2s;
                 margin: 0;
                 max-width:500px;
-                width:92%;
+                width:92vw;
                 // min-width:500px;
                 position: relative;
             }
         }
+        
         
         #counterAndArrow{
             @include box(flex, column, space-between, center);
@@ -52,10 +59,26 @@
     }
 }
 
+@media screen and (min-width:768px){
+    #value-con{
+        margin: 36% auto;
+        #title-and-text{
+            
+            #value-title{
+                // margin-bottom:0px;
+            }
+        }
+        
+    }
+}
+
 @media screen and (min-width: 1024px){
     #value-con{
         @include hw(54%, 615px);
         margin: 20% auto;
+        #value-text-div{
+            // padding: 40.6px 0 23.6px 0;
+        }
     }
 }
 
@@ -66,11 +89,11 @@
             margin: 27.5px auto;
             font-size: 44px;
         }
-        p{
-            padding: 30.5px 0;
-        }
         h2{
             margin:37.5px auto 104px auto ;
+        }
+        #counterAndArrow{
+            height:165px;
         }
     }
 }

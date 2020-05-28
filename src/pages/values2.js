@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/css/values.css';
 import DownArrow from '../assets/icons/values-down-arrow.png'
-import deb from 'lodash.debounce';
-import thot from 'lodash.throttle';
+import {ValuesHeader} from '../components/header'
 
 const Values = ()=>{
   
+  const [counter, setCounter] = useState(0)
+  const [touchStartPoint, setTouchStartPoint] = useState(0);
   const title = ['Openness', 'Service', 'Evaluation', 'experience', 'renounce', 'enjoy', 'diligence'];
   const text = [
     'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
@@ -16,89 +17,85 @@ const Values = ()=>{
     'We try to find joy in whatever we do.',
     'If something is worth doing, its worth doing wholeheartedly.'
   ];
-  
-  const [counter, setCounter] = useState(0)
-  const [valueTitle, setTitle] = useState(title[counter])
-  const [valueText, setText] = useState(text[counter])
-  const [stateChange, setStateChange] = useState(0);
 
-  const [swipeDirection, setSwipeDirection] = useState(0);
+  const nextValue = ()=>{
+    shrinkContent();
+    setTimeout(()=>{setCounter(counter + 1)}, 500)
+  }
+  const prevValue = ()=>{
+    shrinkContent();
+    setTimeout(()=>{setCounter(counter - 1)}, 500)
+  }
+
+  const shrinkContent = ()=>{
+      document.getElementById('value-text-div').style.width = 0;
+      document.getElementById('value-text').style.bottom = '10px';
+      document.getElementById('value-text').style.opacity = 0;
+      document.getElementById('value-title').style.opacity = 0;  
+  }
   
-  
-  const valueUp = ()=>{
-    document.getElementById('value-title').style.opacity = 0;
-    document.getElementById('value-text').style.opacity = 0;  
-    setTimeout(()=>{
-      setCounter(counter + 1)
-      document.getElementById('value-title').style.opacity = 1;
-      document.getElementById('value-text').style.opacity = 1;  
-    }, 200)
-  }      
-  
-  const valueDown = ()=>{
-    document.getElementById('value-title').style.opacity = 0;
-    document.getElementById('value-text').style.opacity = 0;  
-    setTimeout(()=>setCounter(counter - 1), 200)
-  }      
-  
+  const readWheel = (e)=>{
+    if(document.getElementById('value-title')){
+      window.removeEventListener('wheel', readWheel);
+      if(e.deltaY > 0 && counter <= 5){
+          nextValue();
+        }  
+      else if(e.deltaY < 0 && counter >= 1){
+        prevValue();
+      }}
+  }
+
+  const readSwipe = (e)=>{
+    // setTimeout(()=>{
+      window.removeEventListener('touchend', readSwipe)
+      if(e.changedTouches[0].screenY < touchStartPoint - 0 && counter <= 5){
+        nextValue();
+      }  
+      else if(e.changedTouches[0].screenY > touchStartPoint + 0 && counter >= 1){
+        prevValue();
+      }  
+  }
+  const touchStart = (e)=>{ setTouchStartPoint(e.changedTouches[0].clientY); }
+  const keyReaders = (e)=>{
+    window.removeEventListener('keyup', keyReaders);
+    if(e.keyCode === 40 && counter <= 5 ){ nextValue() }
+    else if(e.keyCode === 38 && counter >= 1){ prevValue() }
+  }
+
 useEffect(()=>{
-    
     document.getElementById('value-title').style.opacity = 1;
     document.getElementById('value-text').style.opacity = 1;
+    document.getElementById('value-text-div').style.width = '92%';
+    document.getElementById('value-text').style.bottom = '0px';
+    // 1. On render or state change, styles of changing content are set.
     
-    const funky = (e)=>{
-      
-      setTimeout(()=>{
-        if(e.deltaY > 0 && counter <= 5){
-          valueUp();
-        }  
-        else if(e.deltaY < 0 && counter >= 1){
-          valueDown();
-        }
-      }, 300)
-      window.removeEventListener('wheel', funky)
-    }
-
-    const swiper = (e)=>{
-      setTimeout(()=>{
-        if(e.changedTouches[0].clientY > swipeDirection + 100 && counter <= 5){
-          valueUp();
-        }  
-        else if(e.changedTouches[0].clientY < swipeDirection - 100 && counter >= 1){
-          valueDown();
-        }
-      }, 300)
-      window.removeEventListener('touchend', swiper)
-    }
-
-    // const clicker = () =>{
-    //   (counter <= 5) ? valueUp():console.log('nah')
-    //   window.removeEventListener('click', clicker)
-    // }
+    window.removeEventListener('wheel', readWheel)    
+    window.removeEventListener('touchend', readSwipe);
+    window.removeEventListener('touchstart', touchStart);
+    window.removeEventListener('keyup', keyReaders);
+    document.getElementById('down-arrow').removeEventListener('click', nextValue);
     
     setTimeout(()=>{
-      window.addEventListener('wheel', funky)    
-    }, 1500)
-
-    window.addEventListener('touchstart', (e)=>{
-      setSwipeDirection(e.changedTouches[0].clientY)
-    })
-    
-    window.addEventListener('touchend', swiper)
-
-    // window.addEventListener('click', clicker)
-
-
+      window.addEventListener('wheel', readWheel)    
+    }, 1250)
+    // 2. After 1.5s, wheel event listener is added to the window.
+    window.addEventListener('touchend', readSwipe);
+    window.addEventListener('touchstart', touchStart);
+    window.addEventListener('keyup', keyReaders);
+    document.getElementById('down-arrow').addEventListener('click', nextValue);
   })
   
   return(
     <div id='page_value' className='page' >
+      <ValuesHeader />
       <div id='value-con'>
-        <h1 id='value-title'>{title[counter]}</h1>
-        <p id='value-text'>{text[counter]} </p>
+        <div id='title-and-text'>
+          <h1 id='value-title'>{title[counter]}</h1>
+          <div id='value-text-div'><p id='value-text'>{text[counter]}</p></div>
+        </div>
         <div id='counterAndArrow'>
           <h4 id='value-counter'>{`0${counter + 1}`}/07</h4>
-          <img src={DownArrow}  onClick={()=>{(counter <= 5) ? valueUp():console.log('nah')}}/>
+          <img src={DownArrow} id='down-arrow' />
         </div>
       </div>
     </div>

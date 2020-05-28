@@ -21,7 +21,7 @@ const Lyn2 = ()=>{
   
   if(loadStatus === 'no'){
     return(
-      <div style={{height:'100vh', width:'100vw', backgroundColor:'green'}}><h1>loading</h1></div>
+      <div style={{height:'100vh', width:'100vw', backgroundColor:'#212121'}}><h1>loading</h1></div>
     )
   }
   
