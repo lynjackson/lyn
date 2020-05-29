@@ -51,11 +51,6 @@
       }
   }
 
-
-
-
-
-
   
   #header2{
       @include box(flex, column, center, center);  
@@ -133,7 +128,7 @@
 
 @media screen and (min-width: 1024px){
   
-  #header2{
+  #header{
     #header-items2{
       width: $width-iPad;
 
@@ -161,7 +156,7 @@
 }
 
 @media screen and (min-width: 1280px){
-  #header2{
+  #header{
     #header-items2{
       width: $width-13;
     }

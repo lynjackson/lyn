@@ -62,9 +62,9 @@ export const Portfolio = ()=>{
   
   return(
     <LynTab title={'Portfolio'}>
-      <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React Native, REST API , Redux, Firebase'} imageLink={'https://lynjackson.github.io/bill_page'} xdLink={'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/'}/>
-      <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API , Redux, Firebase'} imageLink={'/ethe_design'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/screen/26a9b51d-f537-4eb0-be5c-214f3870daf8/Vision-15-1'}/>
-      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React Native, REST API , Redux, Firebase'} imageLink={'https://studio.ljoconnor5.now.sh/'} />
+      <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React, Webpack, Redux, Sass'} imageLink={'https://lynjackson.github.io/bill_page'} xdLink={'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/'}/>
+      <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API, Redux, Firebase'} imageLink={'/ethe_design'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/screen/26a9b51d-f537-4eb0-be5c-214f3870daf8/Vision-15-1'}/>
+      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React, Next.js, Redux, Sass'} imageLink={'https://studio.ljoconnor5.now.sh/'} />
     </LynTab>
   )
 }
@@ -116,9 +116,10 @@ export const Education = (props) =>{
 export const More =(props) =>{
   return(
     <LynTab title={'More'}>
-      <p>I believe in the power of the interface to influence the hearts and minds of users. I strive to create fast, intuitive, useful products that give users a sense of ease. I want to work with individuals who think similarly.Developers are users too, perhaps not of the product, but of the code that comprises it. It’s important to me that code be clean, efficient and readable. I’m committed to best practices to achieve this.</p>
-      <p>I constantly seek to grow my body of knowledge, and am committed to thinking my way around problems. I try to use failures to learn, and to live with a balance of humility, diligence, empathy and patience. I’m a student of the game when it comes to both design and development. I’m adherent to design principles and conventions. I write clean and efficient code, and am always keen to learn the latest language capabilities and technologies. I love getting better at what I do. </p>
-      <p>I want to be part of a team of people who create products and experiences, and are passionate about doing so. I prioritize streamlining my workflow for myself and teammates as much as I can. Some of my other interests are summer, basketball, cooking, crashing open houses and new experiences.</p>
+      <p>I believe in the power of the interface to influence the hearts and minds of users. I strive to create fast, useful products that give users a sense of ease, and enjoy working with individuals who think similarly. I am always trying to grow my body of knowledge, and have committed to thinking my way around problems. </p>
+      <p>I’m a student of both development and design; adherent to UI principles and best practices of development. Developers are users too, perhaps not of the product, but of the code that comprises it. It’s important to me that code be clean, efficient and readable.</p>
+      <p>I enjoy working as part of team, collectively trying to solve a problem we all care about. I understand the importance of communication and flexibility in teamwork, and prioritize and enjoy finding ways to streamline my workflow. </p>
+      <p>I try to learn from my mistakes, and live with a balance of humility, diligence, empathy and patience. </p>
     </LynTab>
   )
 }

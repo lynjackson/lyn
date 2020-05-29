@@ -61,7 +61,7 @@ export const Header = (props)=>{
       </div>
       
       <div id='nav-options' style={navOpStyle}>
-        <Link to='/lyn' className='nav-option'><h2>our designer</h2></Link>
+        <a href='https://lynjackson.github.io/ethe_design/' className='nav-option'><h2>home</h2></a>
         <hr id='divider' style={{borderWidth:1, borderColor:'#A3A3A3', width:'100%'}}/>
         <Link to='/ethe_design/values' className='nav-option'  ><h2>our values</h2></Link>
       </div>
