@@ -64,7 +64,7 @@ export const Portfolio = ()=>{
     <LynTab title={'Portfolio'}>
       <Project image={Bill} projectName={'Bill Android Pay App'} projectTech={'React, Webpack, Redux, Sass'} imageLink={'https://lynjackson.github.io/bill_page'} xdLink={'https://xd.adobe.com/view/5ec009d3-2a06-4639-40a6-b639838c3164-28f1/'}/>
       <Project image={Ethe} projectName={'Ethe Design Firm Site'} projectTech={'React Native, REST API, Redux, Firebase'} imageLink={'/ethe_design'} xdLink={'https://xd.adobe.com/view/5c54b440-3964-4159-7353-f2eb278083b7-2a65/screen/26a9b51d-f537-4eb0-be5c-214f3870daf8/Vision-15-1'}/>
-      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React, Next.js, Redux, Sass'} imageLink={'https://studio.ljoconnor5.now.sh/'} />
+      <Project image={PTStudio} projectName={'Perfect Touch Studio Site'} projectTech={'React, Next.js, Redux, Sass'} imageLink={'https://ptstudio.ljoconnor5.now.sh/'} />
     </LynTab>
   )
 }
